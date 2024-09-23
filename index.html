@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f42f9d072b.js" crossorigin="anonymous"></script>
+    <!-- this script is used for using icons of project section from fontawesome website -->
+</head>
+<body>
+
+    <!-- thats a div of home page  -->
+    <!-- this div contains navbar ,logo ,and homepage texts -->
+    <div id="header">
+
+        <div class="container">
+
+            <!-- this nav contain home,project,about links etc -->
+            <nav>
+
+                <img src="ye-wali.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#services">Projects</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <!--  this is a icon of closing menu baar for home,contact etc -->
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!-- this is a icon of opening menu baar for home,contact etc -->
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <!-- remove bhilwar if it is not looking good or add a <br> tag to write in next line u will find its css in head text where shanky is wrritten in a span  -->
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <h1>Hey,I'm <span>Shanky</span> Bhilwar</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- from here this is a {{{{{about}}}}}} section   -->
+
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mypic-3.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-para">Hello, I'm Shanky, a dedicated full-stack developer with a passion for crafting innovative digital solutions. With a comprehensive three-month internship and a certification of FinTech company Praedico Finance, I've developed expertise in Mern stack,framworks like Reactjs,Tailwind,Bootstrap. I excel in fast-paced environments, consistently delivering high-quality results and demonstrating a strong commitment to continuous learning. Beyond coding, I'm deeply engaged in exploring emerging technologies and contributing to the tech community. I'm eager to bring my skills and enthusiasm for technology to you, I can contribute to meaningful projects and grow professionally. Thank you for considering my portfolio, and I look forward to discussing potential opportunities further.</p>
+
+
+
+                    <!-- these are the heading of skill and education{{{{content}}}} and has class name as tab links which we gonna use in js -->
+
+                    <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+                        <!-- i commented this experience section in about section cz i got none -->
+
+                        <!-- <p class="tab-links">Experience</p> -->
+
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <!-- these are the contents of skill and education and has class name as tab contents which we gonna use in js -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack</span> Building end-to-end web solutions</li>
+                            <li><span>Front-End</span> Creating engaging user interfaces with HTML,CSS,React.js,JavaScript</li>
+                            <li><span>Back-end</span> Developing scalable server-side logic with Nodejs,Express.js</li>
+                            <li><span>Databases</span> Designing efficient data storage solutions with MongoDB,Mysql</li>
+                            <!-- <li><span>Frameworks</span> Leveraging React,Tailwind,Bootstrap</li> -->
+                        </ul>
+                    </div>
+                    <!--copied this (ul li_ to make skill and education section in about   -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span> Internship </li>
+                            <li><span>2023</span> MCAs</li>
+                            <li><span>2021</span> BCA</li>
+                            <li><span>2018</span> 12th</li>
+                            <li><span>2016</span> 10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- we will make project instead of services cz we got none to give  -->
+    <!-- but we will use classname as servie instead of pproject so we dont get confused -->
+    <!-- {{{{{{project}}}}}} -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                
+             <!--------- these are the cards of {{{{project}}}} showcasing----------- -->
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i> 
+                     <!--this is icon of project took this from font awesome website -->
+                    <h2>Gen 'z' Cart</h2>
+                    <p>Gen Z Cart: The ultimate online shop for bold, stylish, and trend-setting products made for Gen Z.</p>
+                    <a href="https://github.com/shanky-bhilwar/gen-z-cart-project.git">Github link click here</a>
+                </div>
+                 <!--------- these are the cards of {{{{project}}}} showcasing----------- -->
+
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Decrypshan</h2>
+                     <!--this is icon of project took this from font awesome website -->
+                    <p>Decrypshan: Comprehensive cryptocurrency analytics and news, offering detailed insights and real-time updates in a user-friendly, secure environment</p>
+                    <a href="https://github.com/shanky-bhilwar/Decryp-Shan-project-.git">Github link click here</a>
+                </div>
+                 <!--------- these are the cards of {{{{project}}}} showcasing----------- -->
+                 <!-- <div>
+                    <i class="fa-solid fa-tv"></i>
+                    <h2>Netflix-Gpt</h2>
+                    <p>Basically it is a chatgpt of Netflix ill change this description when im done making this project</p>
+                    <a href="https://www.netflix.com/">Learn More</a>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio code starts from hereeeeeeeeeee-------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Live Projects</h1>
+            <div class="work-list">
+
+                <!-- portfolio/project images--------------------- -->
+                <div class="work">
+                    <!-- this is a image of our project ecommerce -->
+                    <img src="./final for now img project/e-commerce project img final for now.png" >
+                    <div class="layer">
+                        <h3>Gen 'z' Cart</h3>
+                        <p>Elevating your online shopping experience with intuitive navigation and secure transactions, our platform simplifies browsing and purchasing, ensuring convenience and peace of mind</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                      <!-- this is a image of our project crypto-->
+                    <img src="./final for now img project/crypto image.JPG" > 
+                    <div class="layer">
+                        <h3>Decrypshan</h3>
+                        <p>"Unlock the world of cryptocurrencies with our dynamic dashboard, meticulously tracking prices across the ever-fluctuating crypto landscape, empowering your decisions with real-time data</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>    
+                </div>
+                <!-- <div class="work">
+                      <!-- this is a image of our project netflix gpt -->
+                    <!-- <img src="./final for now img project/netflix img.JPG" >
+                    <div class="layer">
+                        <h3>Netflix-Gpt</h3>
+                        <p>Dive into endless entertainment with our Netflix clone, delivering a seamless streaming experience with a vast library of captivating content at your fingertips</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div> --> 
+                </div>
+            </div>
+            <!-- this is the see more page of after the live project divs -->
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+    <!-- {{{{{{contact}}}}}} section html starting from here -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shankybhilwar24@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7828444012</p>
+                    <!-- give ur social media links here  -->
+                    <div class="social-icons">
+                        <a href="https://github.com/shanky-bhilwar"><i class="fa-brands fa-github"></i></a>
+                        <a href="www.linkedin.com/in/shanky-bhilwar-b6a847328"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href="https://www.instagram.com/shanky6_6?igsh=MTJ5eTNjODk2bDV4cw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.google.com"><i class="fa-brands fa-twitter-square"></i></a> -->
+                    </div>
+                    <!-- this is the {{{{cv link}}}} to download here -->
+                    <a href="Shanky Bhilwar Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+
+                    <!-- old method of form to send data to google sheet -->
+                    <!-- <form name="submit-to-google-sheet" > -->
+                        <!-- used my poopie gmail for this {{{{Formspree}}} plateform to send email -->
+                         <!-- no need of connecting3 file of js now cz we just did that part with this one link -->
+                    <form  action="https://formspree.io/f/xzzpqayn" method="POST" >
+                        <input type="text" id = "name" name="Name" placeholder="Enter Your Name Here" required autocomplete="off">
+                        <input type="email" id = "email" name="email" placeholder="Enter Your Email Here" required autocomplete="off">
+                        <textarea name="Message" id = "message" rows="6" placeholder="Type Your Message Here" required autocomplete="off"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright@shanky: Made by Shanky <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+    
+</body>
+
+<script src="portfolio1.js"></script>
+<!-- the first script link is for overall js -->
+<!-- and the second js link is for making menubar in mobile screen (responsive) -->
+<script src="portfolio_mobile2.js"></script>
+
+<!-- third js to connect it with google sheet -->
+<script src="connecting3_portfolio_googlesheet.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
